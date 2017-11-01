@@ -5,12 +5,31 @@
         Seamlessly use content files in your Nuxt.js sites.
       </h2>
       <div class="home-links">
-        <nuxt-link to="/post1" class="button--green">Post</nuxt-link>
-        <nuxt-link to="/project1" class="button--green">Project</nuxt-link>
+        <nuxt-link to="/posts/post1" class="button--green">Post</nuxt-link>
+        <nuxt-link to="/projects/project1" class="button--green">Project</nuxt-link>
       </div>
+      {{ projects }}
+      <br/>
+      <br/>
+      {{ posts }}
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  asyncData: async ({ app, route, payload }) => {
+    console.log("INDEX");
+    console.log(route.path);
+    return {
+      projects: (await app.$content("/projects").getAll()) || payload,
+      posts: (await app.$content("/posts").getAll()) || payload
+      // archives: await app.$content('/archives').getAll() || payload,
+      // projects: await app.$content('/projects').getAll() || payload
+    };
+  }
+};
+</script>
 
 <style>
 .home-container {

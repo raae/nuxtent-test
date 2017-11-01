@@ -8,13 +8,13 @@
 <script>
 export default {
   asyncData: async ({ app, route, payload }) => {
-    console.log('POSTS')
-    console.log(route.params.slug)
+    console.log("POSTS");
+    console.log(route.params.slug);
     return {
-      post: (await app.$content('/posts').get(route.params.slug)) || payload
-    }
+      post: (await app.$content("/posts").get(route.path)) || payload
+    };
   }
-}
+};
 </script>
 
 <style>

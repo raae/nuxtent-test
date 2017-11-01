@@ -1,5 +1,5 @@
 ---
-title: Page 1
+title: Project 1
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae convallis turpis. Nullam sed rutrum ipsum. Integer egestas pulvinar quam et vulputate. Suspendisse a facilisis ligula, sit amet laoreet magna. Aliquam quis neque in nisl congue pretium in vitae dui. Nullam vel lectus lorem. Proin pretium augue nunc, quis maximus lorem auctor in. Etiam vulputate volutpat rutrum. Praesent ullamcorper elit est, ac vulputate mauris hendrerit id.
